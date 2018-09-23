@@ -17,9 +17,8 @@ clientDiscord.on('ready', ()=> {
     console.log("BOT ready");
 });
 
-clientDiscord.login('NDkwMjAwNDQxNDY0ODE1NjE4.Dn12fw.nJynH4MEaQOhOz3XFxq4StE0pN4');
+clientDiscord.login('');
 
-//NDkwMjAwNDQxNDY0ODE1NjE4.Dn12fw.nJynH4MEaQOhOz3XFxq4StE0pN4
 
 	clientDiscord.on('message', message => {
 
