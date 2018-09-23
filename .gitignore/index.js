@@ -17,7 +17,7 @@ clientDiscord.on('ready', ()=> {
     console.log("BOT ready");
 });
 
-clientDiscord.login('');
+clientDiscord.login('process.env.TOKEN');
 
 
 	clientDiscord.on('message', message => {
