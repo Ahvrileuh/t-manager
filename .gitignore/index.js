@@ -28,7 +28,7 @@ clientDiscord.login(process.env.TOKEN);
 
 	author = message.author.tag;
 
-		if(author == "Reine des poulettes" || author == "LeCafé#7125" || author == "Nougat forever ❤#8720" || author == "Cassossier#1469"){
+		if(author == "Grande reine des poulettes" || author == "LeCafé#7125" || author == "Nougat forever ❤#8720" || author == "Cassossier#1469"){
 			Rlevel = 1;
 		}else{Rlevel = 0;}
 		
