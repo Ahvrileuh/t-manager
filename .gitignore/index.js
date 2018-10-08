@@ -168,11 +168,16 @@ clientDiscord.login(process.env.TOKEN);
 									+"DANS LE SALON commandes-bots : **!noraj**, **!ban**, **!dice**, **!ploufplouf**, **!echo**");
 			}
 
+			if(message.content === prefix + "nsfw"){
+				
+				message.channel.send("c'est pas gentil d'être mechant avec les brigands");
+			}
+			
 			if(message.content === prefix + "ban"){
 				
 				message.channel.send("application d'un calmez-vous sur " + author);
 			}
-
+			
 			if(message.content === prefix + "noraj"){
 				message.channel.send("*sois gentil pas méchant c'est pas gentil d'être méchant c’est mieux d’être gentil*");
 			}
