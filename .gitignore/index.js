@@ -57,7 +57,7 @@ clientDiscord.login(process.env.TOKEN);
 				if(ran > 50 && ran <= 75){
 					Quiz = 3;
 					message.channel.send("Question 03 : **Quel est le nom du genre cinématographique visant à montrer un groupe de jeune personne se faisant tué par un individu masqué ?** (ecrivez dans le chat **!A**, **!B** ou **!C**)"
-					+ "```A : Le Slasher```" + "```B : Le Giallo```" + "```C : Le Filme d'Horreur```");
+					+ "```A : Le Slasher```" + "```B : Le Giallo```" + "```C : Le Film d'Horreur```");
 
 				}
 				if(ran > 75 && ran <= 100){
