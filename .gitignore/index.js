@@ -24,8 +24,6 @@ clientDiscord.on('ready', ()=> {
 
 clientDiscord.login('process.env.TOKEN');
 
-//NDkwMjAwNDQxNDY0ODE1NjE4.Doj1xQ.SuhGqLprUK_0ho0Mco7ihD6sF2U
-
 	clientDiscord.on('message', message => {
 
 	author = message.author.tag;
