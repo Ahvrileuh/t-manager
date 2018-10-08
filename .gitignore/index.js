@@ -189,7 +189,7 @@ clientDiscord.login(process.env.TOKEN);
 				console.log("everyone spotted");
 			}
 
-			if (message.content.includes("bonjour") || message.content.includes('salut') || message.content.includes('Heyy') && message.author.tag != "t-manager#0637") {
+			if (message.content.includes("bonjour") || message.content.includes('salut') && message.content.includes('t-manager') && message.author.tag != "t-manager#0637") {
 				message.channel.send("*Bonjour à vous !*")
 				console.log("bonjour spotted");
 			}
