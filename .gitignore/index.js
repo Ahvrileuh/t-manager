@@ -115,7 +115,7 @@ clientDiscord.login(process.env.TOKEN);
 					Quiz = 0;
 					
 				}
-				if(message.content === prefix + "C" && Quiz == 3){
+				if(message.content === prefix + "B" && Quiz == 3){
 					message.channel.send("**oé ta gagné laul t tro faurr** *pour pouvoir rejouer, écrit **!run Kuiz** dans ce channel !*");
 					LogicOnPlay = 0;
 					Quiz = 0;
@@ -143,7 +143,7 @@ clientDiscord.login(process.env.TOKEN);
 				}
 
 				if(Quiz == 3){
-					if(message.content === prefix + "B" || message.content === prefix + "A") {
+					if(message.content === prefix + "C" || message.content === prefix + "A") {
 						message.channel.send("**c'est l'inverse de la bonne reponse aya** *pour pouvoir rejouer, écrit **!run Kuiz** dans ce channel !*");
 						LogicOnPlay = 0;
 					}
