@@ -222,13 +222,13 @@ clientDiscord.login(process.env.TOKEN);
 			}
 		}
 
-		if(message.content === prefix + "off" && message.author.tag == "Navril#8268"){
+		if(message.content === prefix + "off" && message.author.tag == "navril#8268"){
 			clientDiscord.user.setPresence({ game: { name: 'BOT OFF', type: 0}});
 			on = false;
 			message.channel.send("**BOT OFF**");
 		}
 
-		if(message.content === prefix + "on" && message.author.tag == "Navril#8268"){
+		if(message.content === prefix + "on" && message.author.tag == "navril#8268"){
 			clientDiscord.user.setPresence({ game: { name: playto, type: 0}});
 			on = true;
 			message.channel.send("**BOT ON**");
