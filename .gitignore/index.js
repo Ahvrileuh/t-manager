@@ -178,6 +178,11 @@ clientDiscord.login(process.env.TOKEN);
 				message.channel.send("application d'un calmez-vous sur " + author);
 			}
 			
+			if(message.content === prefix + "ta-geule-navril-putain-bordel"){
+				
+				message.channel.send("oké ParDon JeU SuIs DeZolé");
+			}
+			
 			if(message.content === prefix + "noraj"){
 				message.channel.send("*sois gentil pas méchant c'est pas gentil d'être méchant c’est mieux d’être gentil*");
 			}
