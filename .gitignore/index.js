@@ -239,13 +239,13 @@ clientDiscord.login(process.env.TOKEN);
 			message.channel.send("**BOT ON**");
 		}
 
-		if(message.content === prefix + "off" && message.author.tag == "JusticeForWaluigi#1605"){
+		if(message.content === prefix + "off" && message.author.tag == "Le Trikiteur#1605"){
 			clientDiscord.user.setPresence({ game: { name: 'BOT OFF', type: 0}});
 			on = false;
 			message.channel.send("**BOT OFF**");
 		}
 
-		if(message.content === prefix + "on" && message.author.tag == "JusticeForWaluigi#1605"){
+		if(message.content === prefix + "on" && message.author.tag == "Le Trikiteur#1605"){
 			clientDiscord.user.setPresence({ game: { name: playto, type: 0}});
 			on = true;
 			message.channel.send("**BOT ON**");
