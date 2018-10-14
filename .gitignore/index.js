@@ -183,6 +183,11 @@ clientDiscord.login(process.env.TOKEN);
 				message.channel.send("**=======================AFFAIRE CLASSÉE=======================**");
 			}
 			
+			if(message.content === prefix + "pax"){
+				
+				message.channel.send("**LA PAIX BANDE DE SOUS-HOMME**");
+			}
+			
 			if(message.content === prefix + "ta-geule-navril-putain-bordel"){
 				
 				message.channel.send("oké ParDon JeU SuIs DeZolé");
