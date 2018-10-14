@@ -178,6 +178,11 @@ clientDiscord.login(process.env.TOKEN);
 				message.channel.send("application d'un calmez-vous sur " + author);
 			}
 			
+			if(message.content === prefix + "closedcase"){
+				
+				message.channel.send("**=======================AFFAIRE CLASSÉE=======================**");
+			}
+			
 			if(message.content === prefix + "ta-geule-navril-putain-bordel"){
 				
 				message.channel.send("oké ParDon JeU SuIs DeZolé");
