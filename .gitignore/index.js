@@ -11,7 +11,7 @@ var on = true;
 var LogicOnPlay = 0;
 var Quiz = 0;
 
-var playto = "cheh !";
+var playto = "boire CoffeeSalty";
 
 var Rlevel = 0;
 
