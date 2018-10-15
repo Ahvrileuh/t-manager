@@ -99,6 +99,39 @@ clientDiscord.login(process.env.TOKEN);
 					+ "```A : 42```" + "```B : √2 ou -√2```" + "```C : impossible```");
 
 				}
+			
+				if(message.content === prefix + ("run Kuiz 5")){
+					LogicOnPlay = 1;
+					message.channel.send("Programme **Kuiz** lancé !");
+					Quiz = 5;
+					message.channel.send("Question 01 : **Quel est l'age de l'univers** (ecrivez dans le chat **!A**, **!B** ou **!C**)"
+					+ "```A : 35 ans```" + "```B : 13.5Mrds d'année```" + "```C : 10Mrds d'année```");
+
+				}
+				if(message.content === prefix + ("run Kuiz 6")){
+					LogicOnPlay = 1;
+					message.channel.send("Programme **Kuiz** lancé !");
+					Quiz = 6;
+					message.channel.send("Question 02 : **Qui est julien lepers** (ecrivez dans le chat **!A**, **!B** ou **!C**)"
+					+ "```A : 42```" + "```B : 42```" + "```C : 42```");
+
+				}
+				if(message.content === prefix + ("run Kuiz 7")){
+					LogicOnPlay = 1;
+					message.channel.send("Programme **Kuiz** lancé !");
+					Quiz = 7;
+					message.channel.send("Question 03 : **quel est le café composé d'eau caude et d'espresso** (ecrivez dans le chat **!A**, **!B** ou **!C**)"
+					+ "```A : le Latte```" + "```B : l'Americano```" + "```C : le Moka```");
+
+				}
+				if(message.content === prefix + ("run Kuiz 8")){
+					LogicOnPlay = 1;
+					message.channel.send("Programme **Kuiz** lancé !");
+					Quiz = 8;
+					message.channel.send("Question 04 : **quel est la réponce D ?** (ecrivez dans le chat **!A**, **!B** ou **!C**)"
+					+ "```A : A```" + "```B : B```" + "```C : B```");
+
+				}
 
 			if(LogicOnPlay == 1){
 
@@ -127,10 +160,85 @@ clientDiscord.login(process.env.TOKEN);
 					Quiz = 0;
 					
 				}
+				
+				if(message.content === prefix + "B" && Quiz == 5){
+					message.channel.send("**ET UI UI UI UI, C'EST LA BONNE REPONSE !!** *pour pouvoir rejouer, écrit **!run Kuiz** dans ce channel !*");
+					LogicOnPlay = 0;
+					Quiz = 0;
+					
+				}
+				if(message.content === prefix + "A" && Quiz == 6){
+
+					message.channel.send("**KIWI WI WI WIIII, C'EST LA REPONSE BONNE !! (on aime les blagues ici)** *pour pouvoir rejouer, écrit **!run Kuiz** dans ce channel !*");
+					LogicOnPlay = 0;
+					Quiz = 0;
+					
+				}
+				if(message.content === prefix + "B" && Quiz == 7){
+					message.channel.send("**oé ta gagné laul t tro faurr** *pour pouvoir rejouer, écrit **!run Kuiz** dans ce channel !*");
+					LogicOnPlay = 0;
+					Quiz = 0;
+					
+				}
+				if(message.content === prefix + "D" && Quiz == 8){
+					message.channel.send("**oui, c'est vrai, rien n'est faux ! https://www.youtube.com/watch?v=OwcORv0iOWY ** *pour pouvoir rejouer, écrit **!run Kuiz** dans ce channel !*");
+					LogicOnPlay = 0;
+					Quiz = 0;
+					
+				}
 
 				if(Quiz == 1){
 					if(message.content === prefix + "A" || message.content === prefix + "C"){
 						message.channel.send("**nop, Game Over, lol** *pour pouvoir rejouer, écrit **!run Kuiz** dans ce channel !*");
+						LogicOnPlay = 0;
+					}
+				}
+
+				if(Quiz == 2){
+					if(message.content === prefix + "B" || message.content === prefix + "C"){
+						message.channel.send("**VRAIMENT PAS DE BOL, C'EST FAUX** *pour pouvoir rejouer, écrit **!run Kuiz** dans ce channel !*");
+						LogicOnPlay = 0;
+					}
+				}
+
+				if(Quiz == 3){
+					if(message.content === prefix + "C" || message.content === prefix + "A") {
+						message.channel.send("**c'est l'inverse de la bonne reponse aya** *pour pouvoir rejouer, écrit **!run Kuiz** dans ce channel !*");
+						LogicOnPlay = 0;
+					}
+				}
+
+				if(Quiz == 4){
+					if(message.content === prefix + "A" || message.content === prefix + "C"){
+						message.channel.send("**Nup (pourtan CT izi)** *pour pouvoir rejouer, écrit **!run Kuiz** dans ce channel !*");
+						LogicOnPlay = 0;
+					}
+				}
+				
+				if(Quiz == 5){
+					if(message.content === prefix + "A" || message.content === prefix + "C"){
+						message.channel.send("**nop, Game Over, lol** *pour pouvoir rejouer, écrit **!run Kuiz** dans ce channel !*");
+						LogicOnPlay = 0;
+					}
+				}
+
+				if(Quiz == 6){
+					if(message.content === prefix + "B" || message.content === prefix + "C"){
+						message.channel.send("**VRAIMENT PAS DE BOL, C'EST FAUX** *pour pouvoir rejouer, écrit **!run Kuiz** dans ce channel !*");
+						LogicOnPlay = 0;
+					}
+				}
+
+				if(Quiz == 7){
+					if(message.content === prefix + "C" || message.content === prefix + "A") {
+						message.channel.send("**c'est l'inverse de la bonne reponse aya** *pour pouvoir rejouer, écrit **!run Kuiz** dans ce channel !*");
+						LogicOnPlay = 0;
+					}
+				}
+
+				if(Quiz == 8){
+					if(message.content === prefix + "A" || message.content === prefix + "C" || message.content === prefix + "B"){
+						message.channel.send("**Nup (pourtan CT izi)** *pour pouvoir rejouer, écrit **!run Kuiz** dans ce channel !*");
 						LogicOnPlay = 0;
 					}
 				}
