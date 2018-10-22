@@ -11,7 +11,7 @@ var on = true;
 var LogicOnPlay = 0;
 var Quiz = 0;
 
-var playto = "boire CoffeeSalty";
+var playto = "faire son job";
 
 var Rlevel = 0;
 
@@ -322,7 +322,7 @@ clientDiscord.login(process.env.TOKEN);
 				console.log("bonjour spotted");
 			}
 
-			if(message.content === prefix + "ploufplouf" && message.channel.name == "commandes-bots"){
+			if(message.content === prefix + "ploufplouf" && message.channel.name == "bots"){
 				random();
 				message.channel.send("*une boule en or c'est toi qui sort au bout de trois, 1 2 3 !*");
 				message.channel.send("*mais comme le roi ne le veut pas ce sera toi !*");
@@ -333,7 +333,7 @@ clientDiscord.login(process.env.TOKEN);
 				if(ran > 80){message.channel.send("*c'est **LeP’titFantom** le meilleur modo ! lol*")}
 			}
 
-			if(message.content === prefix + "dice" && message.channel.name == "commandes-bots"){
+			if(message.content === prefix + "dice" && message.channel.name == "bots"){
 				random();
 				message.channel.send("**vous pratiquez le lancer de dé !** le resultat est **" + ran + "** / 100");
 				if(ran == 1){message.channel.send("*noraj d'avoir fais 1 ^^*");}
