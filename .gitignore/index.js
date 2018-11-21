@@ -286,6 +286,16 @@ clientDiscord.login(process.env.TOKEN);
 				message.channel.send("application d'un calmez-vous sur " + author);
 			}
 			
+			if(message.content === prefix + "scp-173"){
+				
+				message.channel.reply("http://fondationscp.wikidot.com/scp-173");
+			}
+			
+			if(message.content === prefix + "scp-682"){
+				
+				message.channel.reply("http://fondationscp.wikidot.com/scp-682");
+			}
+			
 			if(message.content === prefix + "closedcase"){
 				
 				message.channel.send("**=======================AFFAIRE CLASSÉE=======================**");
