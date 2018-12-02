@@ -11,7 +11,7 @@ var on = true;
 var LogicOnPlay = 0;
 var Quiz = 0;
 
-var playto = "faire son job";
+var playto = "boire une tasse de modafinil";
 
 var Rlevel = 0;
 
