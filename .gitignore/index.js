@@ -315,11 +315,11 @@ clientDiscord.login(process.env.TOKEN);
 				message.channel.send("*sois gentil pas méchant c'est pas gentil d'être méchant c’est mieux d’être gentil*");
 			}
 
-			/*if (message.content.includes('pd') || message.content.includes('PD') || message.content.includes('Pd') || message.content.includes('pD')) {
+			if (message.content.includes('bite') || message.content.includes('BITE') || message.content.includes('Bite') || message.content.includes('bIte')) {
 				message.delete();
 				message.author.send("*pd*");
 				console.log("pd spotted");
-			  }*/
+			  }
 
 			if (message.content.includes("@everyone @everyone")) {
 				message.delete();
