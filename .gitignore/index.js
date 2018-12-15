@@ -317,7 +317,7 @@ clientDiscord.login(process.env.TOKEN);
 
 			if (message.content.includes('bite') || message.content.includes('BITE') || message.content.includes('Bite') || message.content.includes('bIte')) {
 				message.delete();
-				message.author.send("*pd*");
+				message.author.send("*stop*");
 				console.log("pd spotted");
 			  }
 
