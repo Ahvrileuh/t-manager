@@ -348,7 +348,7 @@ clientDiscord.login(process.env.TOKEN);
 				message.channel.send("**vous pratiquez le lancer de dé !** le resultat est **" + ran + "** / 100");
 				if(ran == 1){message.channel.send("*noraj d'avoir fais 1 ^^*");}
 				if(ran == 100){message.channel.send("*bien ouej*");}
-				if(ran == 54){message.channel.send("*t'es un genie mon gars tu merite un role en plus*");
+				if(ran == 42){message.channel.send("*t'es un genie mon gars ça compte pour 1000%*");
 				console.log("UN GENIE");
 			}
 				
