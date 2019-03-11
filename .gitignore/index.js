@@ -315,19 +315,13 @@ clientDiscord.login(process.env.TOKEN);
 				message.channel.send("*sois gentil pas méchant c'est pas gentil d'être méchant c’est mieux d’être gentil*");
 			}
 
-			if (message.content.includes('bite') || message.content.includes('BITE') || message.content.includes('Bite') || message.content.includes('bIte')) {
-				message.delete();
-				message.author.send("*stop*");
-				console.log("pd spotted");
-			  }
-
 			if (message.content.includes("@everyone @everyone")) {
 				message.delete();
 				message.author.send("*c'est pas drole mec...*")
 				console.log("everyone spotted");
 			}
 
-			if (message.content.includes("bonjour") || message.content.includes('salut') && message.content.includes('t-manager') && message.author.tag != "t-manager#0637") {
+			if (message.content.includes("bonjour") && message.author.tag != "t-manager#0637") {
 				message.channel.send("*Bonjour à vous !*")
 				console.log("bonjour spotted");
 			}
@@ -337,8 +331,8 @@ clientDiscord.login(process.env.TOKEN);
 				message.channel.send("*une boule en or c'est toi qui sort au bout de trois, 1 2 3 !*");
 				message.channel.send("*mais comme le roi ne le veut pas ce sera toi !*");
 				if(ran <= 20){message.channel.send("*c'est **Navril** le meilleur modo !*")}
-				if(ran > 20 && ran <= 40){message.channel.send("*c'est **Anzu Miu** la meilleure modo !*")}
-				if(ran > 40 && ran <= 60){message.channel.send("*c'est **Le Trikiteur** le meilleur modo !*")}
+				if(ran > 20 && ran <= 40){message.channel.send("*c'est **faké** la meilleure modo !*")}
+				if(ran > 40 && ran <= 60){message.channel.send("*c'est **un gars random** le meilleur modo !*")}
 				if(ran > 60 && ran <= 80){message.channel.send("*c'est **CoffeeSalty** le meilleur modo !*")}
 				if(ran > 80){message.channel.send("*c'est **LeP’titFantom** le meilleur modo ! lol*")}
 			}
@@ -346,9 +340,9 @@ clientDiscord.login(process.env.TOKEN);
 			if(message.content === prefix + "dice" && message.channel.name == "bots"){
 				random();
 				message.channel.send("**vous pratiquez le lancer de dé !** le resultat est **" + ran + "** / 100");
-				if(ran == 1){message.channel.send("*noraj d'avoir fais 1 ^^*");}
+				if(ran == 1){message.channel.send("*cette CHANCE*");}
 				if(ran == 100){message.channel.send("*bien ouej*");}
-				if(ran == 42){message.channel.send("*t'es un genie mon gars ça compte pour 1000%*");
+				if(ran == 42){message.channel.send("*comme ton qi*");
 				console.log("UN GENIE");
 			}
 				
