@@ -11,9 +11,11 @@ var on = true;
 var LogicOnPlay = 0;
 var Quiz = 0;
 
-var playto = "boire une tasse de modafinil";
+var playto = "0";
 
 var Rlevel = 0;
+
+var playchange = false;
 
 clientDiscord.on('ready', ()=> {
 	
@@ -304,6 +306,18 @@ clientDiscord.login(process.env.TOKEN);
 			if(message.content === prefix + "tgnavril"){
 				
 				message.channel.send("oké ParDon JeU SuIs DeZolé");
+			}
+			
+			if(message.content === prefix + "game-change"){
+				
+				message.channel.send("**votre prochain message posté sur ce channel sera pris en compte comme playline du bot...**");
+				playchange = true;
+			}
+			
+			if(playchange = true){
+				if(message.author === author){
+					playto = message.content;
+				}
 			}
 			
 			if(message.content === prefix + "noraj"){
