@@ -317,9 +317,15 @@ clientDiscord.login(process.env.TOKEN);
 			if(playchange == true){
 				if(message.author === author){
 					playto = message.content;
+					playchange = false;
+					message.channel.send("**changements reussi avec succes !**");
+				}
+				else{
+					playchange = false;
+					message.channel.send("**erreur 404**");
 				}
 			}
-			
+   		
 			if(message.content === prefix + "noraj"){
 				message.channel.send("*sois gentil pas méchant c'est pas gentil d'être méchant c’est mieux d’être gentil*");
 			}
