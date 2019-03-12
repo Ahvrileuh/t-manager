@@ -312,17 +312,18 @@ clientDiscord.login(process.env.TOKEN);
 				playchange = true;
 				message.channel.send("**votre prochain message posté sur ce channel sera pris en compte comme playline du bot...**");
 				
-			}
 			
-			if(playchange == true){
-				if(message.author === author){
-					playto = message.content;
-					playchange = false;
-					message.channel.send("**changements reussi avec succes !**");
-				}
-				else{
-					playchange = false;
-					message.channel.send("**erreur 404**");
+			
+				if(playchange == true){
+					if(message.author === author){
+						playto = message.content;
+						playchange = false;
+						message.channel.send("**changements reussi avec succes !**");
+					}
+					else{
+						playchange = false;
+						message.channel.send("**erreur 404**");
+					}
 				}
 			}
    		
