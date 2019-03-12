@@ -329,8 +329,8 @@ clientDiscord.login(process.env.TOKEN);
 			
 			if (message.content.includes("!g")) {
 				message.delete();
-				message.author.send("*playline changé avec succes*")
 				playto = message.content;
+				message.author.send("*playline changé avec succes*")
 			}
    		
 			if(message.content === prefix + "noraj"){
