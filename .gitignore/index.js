@@ -11,7 +11,7 @@ var on = true;
 var LogicOnPlay = 0;
 var Quiz = 0;
 
-var playto = "0";
+var playto = "niquer fedor";
 
 var Rlevel = 0;
 
