@@ -314,7 +314,7 @@ clientDiscord.login(process.env.TOKEN);
 				playchange = true;
 			}
 			
-			if(playchange = true){
+			if(playchange == true){
 				if(message.author === author){
 					playto = message.content;
 				}
