@@ -330,6 +330,7 @@ clientDiscord.login(process.env.TOKEN);
 			if (message.content.includes("!g")) {
 				message.delete();
 				playto = message.content;
+				clientDiscord.user.setPresence({ game: { name: playto, type: 0}});
 				message.author.send("*playline changé avec succes*")
 			}
    		
