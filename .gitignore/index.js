@@ -26,15 +26,10 @@ clientDiscord.login(process.env.TOKEN);
 
 	clientDiscord.on('message', message => {
 
-	author = message.author.tag;
-
-		if(author == "Grande reine des poulettes" || author == "LeCafé#7125" || author == "Nougat forever ❤#8720" || author == "Cassossier#1469"){
-			Rlevel = 1;
-		}else{Rlevel = 0;}
-		
+	author = message.author.tag;		
 		if(on == true){
 
-			if(message.content === prefix + "run Kuiz" && message.channel.name == "bot-quiz"){
+			if(message.content === prefix + "quizz"){
 
 				LogicOnPlay = 1;
 
@@ -67,7 +62,7 @@ clientDiscord.login(process.env.TOKEN);
 
 				}
 			}
-				if(message.content === prefix + ("run Kuiz 1")){
+				if(message.content === prefix + ("quizz 1")){
 					LogicOnPlay = 1;
 					message.channel.send("Programme **Kuiz** lancé !");
 					Quiz = 1;
@@ -75,7 +70,7 @@ clientDiscord.login(process.env.TOKEN);
 					+ "```A : 1994```" + "```B : 1991```" + "```C : wallah c kom marieau```");
 
 				}
-				if(message.content === prefix + ("run Kuiz 2")){
+				if(message.content === prefix + ("quizz 2")){
 					LogicOnPlay = 1;
 					message.channel.send("Programme **Kuiz** lancé !");
 					Quiz = 2;
@@ -83,7 +78,7 @@ clientDiscord.login(process.env.TOKEN);
 					+ "```A : Fluid Super critique```" + "```B : Fluide super condensé```" + "```C : Plasma```");
 
 				}
-				if(message.content === prefix + ("run Kuiz 3")){
+				if(message.content === prefix + ("quizz 3")){
 					LogicOnPlay = 1;
 					message.channel.send("Programme **Kuiz** lancé !");
 					Quiz = 3;
@@ -91,7 +86,7 @@ clientDiscord.login(process.env.TOKEN);
 					+ "```A : Le Slasher```" + "```B : Le Giallo```" + "```C : Le Film d'Horreur```");
 
 				}
-				if(message.content === prefix + ("run Kuiz 4")){
+				if(message.content === prefix + ("quizz 4")){
 					LogicOnPlay = 1;
 					message.channel.send("Programme **Kuiz** lancé !");
 					Quiz = 4;
@@ -100,7 +95,7 @@ clientDiscord.login(process.env.TOKEN);
 
 				}
 			
-				if(message.content === prefix + ("run Kuiz 5")){
+				if(message.content === prefix + ("quizz 5")){
 					LogicOnPlay = 1;
 					message.channel.send("Programme **Kuiz** lancé !");
 					Quiz = 5;
@@ -108,7 +103,7 @@ clientDiscord.login(process.env.TOKEN);
 					+ "```A : 35 ans```" + "```B : 13.5Mrds d'année```" + "```C : 10Mrds d'année```");
 
 				}
-				if(message.content === prefix + ("run Kuiz 6")){
+				if(message.content === prefix + ("quizz 6")){
 					LogicOnPlay = 1;
 					message.channel.send("Programme **Kuiz** lancé !");
 					Quiz = 6;
@@ -116,7 +111,7 @@ clientDiscord.login(process.env.TOKEN);
 					+ "```A : 42```" + "```B : 42```" + "```C : 42```");
 
 				}
-				if(message.content === prefix + ("run Kuiz 7")){
+				if(message.content === prefix + ("quizz 7")){
 					LogicOnPlay = 1;
 					message.channel.send("Programme **Kuiz** lancé !");
 					Quiz = 7;
@@ -124,7 +119,7 @@ clientDiscord.login(process.env.TOKEN);
 					+ "```A : le Latte```" + "```B : l'Americano```" + "```C : le Moka```");
 
 				}
-				if(message.content === prefix + ("run Kuiz 8")){
+				if(message.content === prefix + ("quizz 8")){
 					LogicOnPlay = 1;
 					message.channel.send("Programme **Kuiz** lancé !");
 					Quiz = 8;
@@ -306,7 +301,7 @@ clientDiscord.login(process.env.TOKEN);
 				message.channel.send("**LA PAIX BANDE DE SOUS-HOMME**");
 			}
 			
-			if(message.content === prefix + "ta-geule-navril-putain-bordel"){
+			if(message.content === prefix + "tgnavril"){
 				
 				message.channel.send("oké ParDon JeU SuIs DeZolé");
 			}
@@ -326,18 +321,18 @@ clientDiscord.login(process.env.TOKEN);
 				console.log("bonjour spotted");
 			}
 
-			if(message.content === prefix + "ploufplouf" && message.channel.name == "bots"){
+			if(message.content === prefix + "ploufplouf"){
 				random();
 				message.channel.send("*une boule en or c'est toi qui sort au bout de trois, 1 2 3 !*");
 				message.channel.send("*mais comme le roi ne le veut pas ce sera toi !*");
 				if(ran <= 20){message.channel.send("*c'est **Navril** le meilleur modo !*")}
-				if(ran > 20 && ran <= 40){message.channel.send("*c'est **faké** la meilleure modo !*")}
+				if(ran > 20 && ran <= 40){message.channel.send("*c'est **jul** le meilleur modo !*")}
 				if(ran > 40 && ran <= 60){message.channel.send("*c'est **un gars random** le meilleur modo !*")}
-				if(ran > 60 && ran <= 80){message.channel.send("*c'est **CoffeeSalty** le meilleur modo !*")}
-				if(ran > 80){message.channel.send("*c'est **LeP’titFantom** le meilleur modo ! lol*")}
+				if(ran > 60 && ran <= 80){message.channel.send("*c'est **Monsieur LeMoigne** le meilleur prof !*")}
+				if(ran > 80){message.channel.send("*c'est **hitler** le meilleur modo !*")}
 			}
 
-			if(message.content === prefix + "dice" && message.channel.name == "bots"){
+			if(message.content === prefix + "dice"){
 				random();
 				message.channel.send("**vous pratiquez le lancer de dé !** le resultat est **" + ran + "** / 100");
 				if(ran == 1){message.channel.send("*cette CHANCE*");}
@@ -349,40 +344,23 @@ clientDiscord.login(process.env.TOKEN);
 			}
 		}
 
-		if(message.content === prefix + "off" && message.author.tag == "navril#1518"){
+		if(message.content === prefix + "off" && message.author.tag == "navril#4377"){
 			clientDiscord.user.setPresence({ game: { name: 'BOT OFF', type: 0}});
 			on = false;
 			message.channel.send("**BOT OFF**");
 		}
 
-		if(message.content === prefix + "on" && message.author.tag == "navril#1518"){
+		if(message.content === prefix + "on" && message.author.tag == "navril#4377"){
 			clientDiscord.user.setPresence({ game: { name: playto, type: 0}});
 			on = true;
 			message.channel.send("**BOT ON**");
 		}
-
-		if(message.content === prefix + "off" && message.author.tag == "Le Trikiteur#1605"){
-			clientDiscord.user.setPresence({ game: { name: 'BOT OFF', type: 0}});
-			on = false;
-			message.channel.send("**BOT OFF**");
+		if(message.content === prefix + "off" && message.author.tag != "navril#4377"){
+			message.channel.send("**ton qi n'est pas assez haut pour effectuer cette commande...**");
 		}
 
-		if(message.content === prefix + "on" && message.author.tag == "Le Trikiteur#1605"){
-			clientDiscord.user.setPresence({ game: { name: playto, type: 0}});
-			on = true;
-			message.channel.send("**BOT ON**");
-		}
-
-		if(message.content === prefix + "off" && Rlevel == 1){
-			clientDiscord.user.setPresence({ game: { name: 'BOT OFF', type: 0}});
-			on = false;
-			message.channel.send("**BOT OFF**");
-		}
-
-		if(message.content === prefix + "on" && Rlevel == 1){
-			clientDiscord.user.setPresence({ game: { name: playto, type: 0}});
-			on = true;
-			message.channel.send("**BOT ON**");
+		if(message.content === prefix + "on" && message.author.tag != "navril#4377"){
+			message.channel.send("**ton qi n'est pas assez haut pour effectuer cette commande...**");
 		}
   });
 
