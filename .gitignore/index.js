@@ -309,9 +309,9 @@ clientDiscord.login(process.env.TOKEN);
 			}
 			
 			if(message.content === prefix + "game-change"){
-				
-				message.channel.send("**votre prochain message posté sur ce channel sera pris en compte comme playline du bot...**");
 				playchange = true;
+				message.channel.send("**votre prochain message posté sur ce channel sera pris en compte comme playline du bot...**");
+				
 			}
 			
 			if(playchange == true){
