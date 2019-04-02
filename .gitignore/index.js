@@ -337,6 +337,21 @@ clientDiscord.login(process.env.TOKEN);
 			if(message.content === prefix + "noraj"){
 				message.channel.send("*sois gentil pas méchant c'est pas gentil d'être méchant c’est mieux d’être gentil*");
 			}
+			
+			if(message.content === prefix + "lievre"){
+				message.channel.send("*john le lièvre a gagné*");
+				message.channel.send("*john le lièvre a gagné*");
+				message.channel.send("*john le lièvre a gagné*");
+				message.channel.send("*john le lièvre a gagné*");
+				message.channel.send("*john le lièvre a gagné*");
+				message.channel.send("*john le lièvre a gagné*");
+				message.channel.send("*john le lièvre a gagné*");
+				message.channel.send("*john le lièvre a gagné*");
+				message.channel.send("*john le lièvre a gagné*");
+				message.channel.send("*john le lièvre a gagné*");
+				message.channel.send("*john le lièvre a gagné*");
+				message.channel.send("*john le lièvre a gagné*");
+			}
 
 			if (message.content.includes("@everyone @everyone")) {
 				message.delete();
