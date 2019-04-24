@@ -11,7 +11,7 @@ var on = true;
 var LogicOnPlay = 0;
 var Quiz = 0;
 
-var playto = "oé";
+var playto = "lire du Zola";
 
 var Rlevel = 0;
 
