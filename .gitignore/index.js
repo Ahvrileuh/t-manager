@@ -322,6 +322,21 @@ clientDiscord.login(process.env.TOKEN);
 				   }
 			}
 			
+			if(message.content === prefix + "zola"){
+				
+				message.channel.send("https://tenor.com/view/tldr-reading-read-george-clooney-gif-5615662");
+			}
+			
+			if(message.content === prefix + "pesto"){
+				
+				message.channel.send("```60 g de basilic frais.```
+```70 g de parmesan râpé```
+```3 cuillères à soupe de pignons de pin.```
+```2 gousses d'ail.```
+```30 cl d'huile d'olive.```
+```Gros sel de Guérande.```");
+			}
+			
 			if(message.content === prefix + "ban"){
 				
 				message.channel.send("application d'un calmez-vous sur " + author);
