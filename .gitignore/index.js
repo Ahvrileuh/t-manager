@@ -33,7 +33,7 @@ clientDiscord.login(process.env.TOKEN);
 
 			if(message.content === prefix + "quizz"){
 
-				LogicOnPlay = 1;
+				LogicOnPlay = 1; 
 
 				message.channel.send("Programme **Kuiz** lancé !");
 
