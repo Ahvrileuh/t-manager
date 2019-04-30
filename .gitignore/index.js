@@ -278,6 +278,50 @@ clientDiscord.login(process.env.TOKEN);
 				message.channel.send("c'est pas gentil d'être mechant avec les brigands");
 			}
 			
+			if(message.content === prefix + "dab"){
+				random();
+				if(ran <= 10)
+				   {
+				   	message.channel.send("https://tenor.com/view/luigi-dab-gif-9672617");
+				   }
+				if(ran > 10 && ran <= 20)
+				   {
+				   	message.channel.send("https://tenor.com/view/thanos-dab-fortnite-gif-12100710");
+				   }
+				if(ran > 20 && ran <= 30)
+				   {
+				   	message.channel.send("https://tenor.com/view/bettywhite-dab-gif-5044603");
+				   }
+				if(ran > 30 && ran <= 40)
+				   {
+				   	message.channel.send("https://tenor.com/view/dab-dancing-idgaf-gif-5661979");
+				   }
+				if(ran > 40 && ran <= 50)
+				   {
+				   	message.channel.send("https://tenor.com/view/martin-weill-quotidien-dab-gif-9229974");
+				   }
+				if(ran > 50 && ran <= 60)
+				   {
+				   	message.channel.send("https://tenor.com/view/squid-ward-dab-parade-gif-11976669");
+				   }
+				if(ran > 60 && ran <= 70)
+				   {
+				   	message.channel.send("https://tenor.com/view/dab-gif-7297587");
+				   }
+				if(ran > 70 && ran <= 80)
+				   {
+				   	message.channel.send("https://tenor.com/view/dab-pogba-bad-pogba-gif-7345779");
+				   }
+				if(ran > 80 && ran <= 90)
+				   {
+				   	message.channel.send("https://tenor.com/view/lame-grandma-dabs-dabbing-cool-gif-8205280");
+				   }
+				if(ran > 90 && ran <= 100)
+				   {
+				   	message.channel.send("https://tenor.com/view/bill-gates-dab-gatesdab-billgatesdab-gif-12977596");
+				   }
+			}
+			
 			if(message.content === prefix + "ban"){
 				
 				message.channel.send("application d'un calmez-vous sur " + author);
