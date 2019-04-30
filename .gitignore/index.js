@@ -327,7 +327,7 @@ clientDiscord.login(process.env.TOKEN);
 				message.channel.send("https://tenor.com/view/tldr-reading-read-george-clooney-gif-5615662");
 			}
 			
-			if(message.content === prefix + "pesto"){
+			/*if(message.content === prefix + "pesto"){
 				
 				message.channel.send("```60 g de basilic frais.```
 ```70 g de parmesan râpé```
@@ -335,7 +335,7 @@ clientDiscord.login(process.env.TOKEN);
 ```2 gousses d'ail.```
 ```30 cl d'huile d'olive.```
 ```Gros sel de Guérande.```");
-			}
+			}*/
 			
 			if(message.content === prefix + "ban"){
 				
