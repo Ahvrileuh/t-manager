@@ -280,45 +280,81 @@ clientDiscord.login(process.env.TOKEN);
 			
 			if(message.content === prefix + "dab"){
 				random();
-				if(ran <= 10)
+				if(ran <= 5)
 				   {
 				   	message.channel.send("https://tenor.com/view/luigi-dab-gif-9672617");
 				   }
-				if(ran > 10 && ran <= 20)
+				if(ran > 5 && ran <= 10)
 				   {
 				   	message.channel.send("https://tenor.com/view/thanos-dab-fortnite-gif-12100710");
 				   }
-				if(ran > 20 && ran <= 30)
+				if(ran > 10 && ran <= 15)
 				   {
 				   	message.channel.send("https://tenor.com/view/bettywhite-dab-gif-5044603");
 				   }
-				if(ran > 30 && ran <= 40)
+				if(ran > 15 && ran <= 20)
 				   {
 				   	message.channel.send("https://tenor.com/view/dab-dancing-idgaf-gif-5661979");
 				   }
-				if(ran > 40 && ran <= 50)
+				if(ran > 20 && ran <= 25)
 				   {
 				   	message.channel.send("https://tenor.com/view/martin-weill-quotidien-dab-gif-9229974");
 				   }
-				if(ran > 50 && ran <= 60)
+				if(ran > 25 && ran <= 30)
 				   {
 				   	message.channel.send("https://tenor.com/view/squid-ward-dab-parade-gif-11976669");
 				   }
-				if(ran > 60 && ran <= 70)
+				if(ran > 30 && ran <= 35)
 				   {
 				   	message.channel.send("https://tenor.com/view/dab-gif-7297587");
 				   }
-				if(ran > 70 && ran <= 80)
+				if(ran > 35 && ran <= 40)
 				   {
 				   	message.channel.send("https://tenor.com/view/dab-pogba-bad-pogba-gif-7345779");
 				   }
-				if(ran > 80 && ran <= 90)
+				if(ran > 40 && ran <= 45)
 				   {
 				   	message.channel.send("https://tenor.com/view/lame-grandma-dabs-dabbing-cool-gif-8205280");
 				   }
-				if(ran > 90 && ran <= 100)
+				if(ran > 45 && ran <= 50)
 				   {
 				   	message.channel.send("https://tenor.com/view/bill-gates-dab-gatesdab-billgatesdab-gif-12977596");
+				   }
+					if(ran > 50 && ran <= 55)
+				   {
+				   	message.channel.send("https://tenor.com/view/dab-epic-lit-legs-gif-8214134");
+				   }
+					if(ran > 55 && ran <= 60)
+				   {
+				   	message.channel.send("https://tenor.com/view/dab-gif-10913292");
+				   }
+					if(ran > 65 && ran <= 70)
+				   {
+				   	message.channel.send("https://tenor.com/view/trummote-donald-trump-infinite-dab-fortnite-fortnite-dance-gif-13273299");
+				   }
+					if(ran > 70 && ran <= 75)
+				   {
+				   	message.channel.send("https://tenor.com/view/rio-dab-sspin-gif-12684706");
+				   }
+					if(ran > 75 && ran <= 80)
+				   {
+				   	message.channel.send("https://tenor.com/view/dancing-niqab-hijab-muslim-muslima-gif-7813970");
+				   }
+					if(ran > 80 && ran <= 85)
+				   {
+				   	message.channel.send("https://tenor.com/view/dab-fidgetspinners-jacksfilms-gif-8790973");
+				   }
+					if(ran > 85 && ran <= 90)
+				   {
+				   	message.channel.send("https://fr.wikipedia.org/wiki/Dab");
+				   }
+					if(ran > 90 && ran <= 95)
+				   {
+				   	message.channel.send("https://tenor.com/view/dab-dabbing-euses-gif-7302013");
+				   }
+					if(ran > 95 && ran <= 100)
+				   {
+				   	message.channel.send("https://tenor.com/view/peterson-farm-bros-dinosaur-dab-dabbing-farm-gif-8466991");
 				   }
 			}
 			
