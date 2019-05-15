@@ -433,6 +433,10 @@ clientDiscord.login(process.env.TOKEN);
 				message.channel.send("*sois gentil pas méchant c'est pas gentil d'être méchant c’est mieux d’être gentil*");
 			}
 			
+			if(message.content === prefix + "algo"){
+				message.channel.send("*voir ma base de donnée d'algos simples : http://human-museum.org/sci/algo*");
+			}
+			
 			if(message.content === prefix + "lievre"){
 				message.channel.send("*john le lièvre a gagné*");
 				message.channel.send("*john le lièvre a gagné*");
