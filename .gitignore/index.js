@@ -144,12 +144,12 @@ clientDiscord.login(process.env.TOKENEPI);
 					   
 				   fields: [
 					   {
-					   	name: "test",
-						value: "test"
+					   	name: "test1",
+						value: "test2"
 					   },
 					   {
-					   	name: "test",
-						value: "test"
+					   	name: "test3",
+						value: "test4"
 					   }
 				   ],
 			   }
