@@ -143,7 +143,6 @@ clientDiscord.login(process.env.TOKENEPI);
 			
 				//message.channel.send("**VOTRE PROCHAIN MESSAGE SERA EPINGLER**");
 				pinned = true;
-				return;
 			}
 			else if(pinned == true){
 				message.pin();
