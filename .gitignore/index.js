@@ -48,11 +48,6 @@ clientDiscord.login(process.env.TOKENEPI);
 				
 					message.delete();
 					
-					/*const chan = member.guild.channels.find('name', 'console');
-					chan.send(`test`);*/
-					
-					message.channel.send("**mot interdit !");
-					
 					return;
 					
 				}
