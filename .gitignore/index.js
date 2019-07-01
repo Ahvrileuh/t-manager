@@ -142,10 +142,11 @@ clientDiscord.login(process.env.TOKENEPI);
 			if(pinned == true){
 				message.pin();
 				pinned = false;
+				message.channel.send("**✅ Message épinglé !**");
 			}
 			else if(message.content === prefix + "pin"){
 			
-				message.channel.send("**VOTRE PROCHAIN MESSAGE SERA EPINGLER**");
+				//message.channel.send("**VOTRE PROCHAIN MESSAGE SERA EPINGLER**");
 				pinned = true;
 				
 			}
