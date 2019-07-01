@@ -32,7 +32,7 @@ clientDiscord.login(process.env.TOKENEPI);
 
 		author = message.author.tag;
 		
-		if(message.author.id === client.user.id){
+		if(message.author.bot){
 		   	return;
 		   }
 		   
