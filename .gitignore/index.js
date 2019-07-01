@@ -2,6 +2,8 @@
 const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 
+var vers = "0";
+
 var prefix = "!";
 var role = "";
 var ran = 0;
@@ -9,14 +11,8 @@ var author = "";
 
 var on = true;
 
-var LogicOnPlay = 0;
-var Quiz = 0;
+var playto = "vers : " + vers;
 
-var playto = "test";
-
-var Rlevel = 0;
-
-var playchange = false;
 var pinned = false;
 
 clientDiscord.on('ready', ()=> {
@@ -123,27 +119,15 @@ clientDiscord.login(process.env.TOKENEPI);
 				   }
 			}
 			
-			if(message.content.includes("bonjour")){
-				
-				message.channel.send("*bonjour les gens !*");
-				
-				for (var i = 0; i < 150; i++) {
-  					message.channel.send("*JOHN LE LIEVRE EST MORT*");
-				}
-			}
+		
 			
-			if(message.content === prefix + "clear"){
-			
-				for (var i = 0; i < 150; i++) {
-  					message.delete();
-				}
-			}
-			
-			if(message.content === perfix + "help"){
+			/*if(message.content === perfix + "help"){
 				
-			   message.channel.send({embed: {
+			   message.channel.send({
+				   embed: {
 				   color: 3447003,
 				   description: "test",
+					   
 				   fields: [
 					   {
 					   	name: "test",
@@ -156,7 +140,8 @@ clientDiscord.login(process.env.TOKENEPI);
 				   ],
 			   }
 			});
-			}
+			}*/
+			
 			if(message.content === prefix + "pin"){
 			
 				//message.channel.send("**VOTRE PROCHAIN MESSAGE SERA EPINGLER**");
