@@ -8,6 +8,7 @@ var ran = 0;
 var author = "";
 
 var on = true;
+
 var LogicOnPlay = 0;
 var Quiz = 0;
 
@@ -16,6 +17,7 @@ var playto = "tiens tiens tiens...";
 var Rlevel = 0;
 
 var playchange = false;
+var pinned = false;
 
 clientDiscord.on('ready', ()=> {
 	
@@ -135,6 +137,17 @@ clientDiscord.login(process.env.TOKENEPI);
 				for (var i = 0; i < 150; i++) {
   					message.delete();
 				}
+			}
+			
+			if(message.startsWith(prefix + "pin")){
+			
+				message.channel.send("**VOTRE PROCHAIN MESSAGE SERA EPINGLER**");
+				pinned = true;
+				
+			}
+			
+			if(pinned == true){
+				message.pin();
 			}
 		}
   });
