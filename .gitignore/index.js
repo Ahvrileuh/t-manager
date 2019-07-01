@@ -2,7 +2,7 @@
 const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 
-var vers = "12";
+var vers = "13";
 
 var BAN = ['juif', 'shoah', 'cremation', 'juiverie'];
 BAN.lenght = 4;
@@ -135,7 +135,7 @@ clientDiscord.login(process.env.TOKENEPI);
 			
 		
 			
-			if(message.content === perfix + "help"){
+			/*if(message.content === perfix + "help"){
 				
 			   message.channel.send({
 				   embed: {
@@ -154,7 +154,7 @@ clientDiscord.login(process.env.TOKENEPI);
 				   ],
 			   }
 			});
-			}
+			}*/
 			
 			if(message.content === prefix + "pin"){
 			
