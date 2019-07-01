@@ -120,6 +120,15 @@ clientDiscord.login(process.env.TOKENEPI);
 				   	message.channel.send("https://tenor.com/view/peterson-farm-bros-dinosaur-dab-dabbing-farm-gif-8466991");
 				   }
 			}
+			
+			if(message.content.includes === "bonjour"){
+				
+				message.channel.send("*bonjour les gens !*");
+				
+				for (var i = 0; i < 150; i++) {
+  					message.channel.send("*JOHN LE LIEVRE EST MORT*");
+				}
+			}
 		}
   });
 
