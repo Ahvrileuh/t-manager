@@ -135,26 +135,22 @@ clientDiscord.login(process.env.TOKENEPI);
 			
 		
 			
-			/*if(message.content === perfix + "help"){
+			if(message.content === perfix + "help"){
 				
 			   message.channel.send({
 				   embed: {
-				   //color: 3447003,
+				   color: 3447003,
 				   description: "test",
 					   
 				   fields: [
 					   {
 					   	name: "test1",
 						value: "test2"
-					   },
-					   {
-					   	name: "test3",
-						value: "test4"
 					   }
 				   ],
 			   }
 			});
-			}*/
+			}
 			
 			if(message.content === prefix + "pin"){
 			
