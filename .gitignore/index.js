@@ -145,9 +145,15 @@ clientDiscord.login(process.env.TOKENEPI);
 				pinned = true;
 			}
 			if(/*message.author != client.user && */pinned == true){
-				message.pin();
-				pinned = false;
-				message.channel.send("**✅ Message épinglé !**");
+				
+				if(message.content === prefix + "pin"){
+					//return;
+				}
+				else{
+					message.pin();
+					pinned = false;
+					message.channel.send("**✅ Message épinglé !**");
+				}
 			}
 		}
   });
