@@ -141,6 +141,7 @@ clientDiscord.login(process.env.TOKENEPI);
 			
 			if(pinned == true){
 				message.pin();
+				pinned = false;
 			}
 			else if(message.content === prefix + "pin"){
 			
