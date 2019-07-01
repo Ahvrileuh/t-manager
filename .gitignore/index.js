@@ -2,7 +2,7 @@
 const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 
-var vers = "13";
+var vers = "14";
 
 var BAN = ['juif', 'shoah', 'cremation', 'juiverie'];
 BAN.lenght = 4;
