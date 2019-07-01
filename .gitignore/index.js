@@ -48,9 +48,8 @@ clientDiscord.login(process.env.TOKENEPI);
 				
 					message.delete();
 					
-					const channel = member.guild.channels.find('name', 'console');
-					if (!channel) return;
-					channel.send(`test`);
+					const chan = member.guild.channels.find('name', 'console');
+					chan.send(`test`);
 					
 					return;
 					
