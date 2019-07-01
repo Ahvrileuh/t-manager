@@ -2,7 +2,7 @@
 const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 
-var vers = "8";
+var vers = "9";
 
 var BAN = ['lepton', 'rat', 'test', 'test2'];
 BAN.lenght = 4;
