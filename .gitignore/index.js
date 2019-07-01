@@ -11,7 +11,7 @@ var on = true;
 var LogicOnPlay = 0;
 var Quiz = 0;
 
-var playto = "c'est pas ton problème.";
+var playto = "tiens tiens tiens...";
 
 var Rlevel = 0;
 
