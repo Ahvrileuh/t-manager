@@ -51,7 +51,7 @@ clientDiscord.login(process.env.TOKENEPI);
 					/*const chan = member.guild.channels.find('name', 'console');
 					chan.send(`test`);*/
 					
-					message.channel.reply("**mot interdit !");
+					message.channel.send("**mot interdit !");
 					
 					return;
 					
