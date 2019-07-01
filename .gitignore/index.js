@@ -139,15 +139,14 @@ clientDiscord.login(process.env.TOKENEPI);
 				}
 			}
 			
-			if(message.startsWith(prefix + "pin")){
+			if(pinned == true){
+				message.pin();
+			}
+			else if(message.content === prefix + "pin"){
 			
 				message.channel.send("**VOTRE PROCHAIN MESSAGE SERA EPINGLER**");
 				pinned = true;
 				
-			}
-			
-			if(pinned == true){
-				message.pin();
 			}
 		}
   });
