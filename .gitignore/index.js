@@ -5,7 +5,7 @@ const clientDiscord = new Discord.Client();
 var vers = "3";
 
 var BAN = ['lepton', 'rat', 'test', 'test2'];
-BAN.lenght = 4;
+//BAN.lenght = 4;
 
 var prefix = "!";
 var role = "";
@@ -44,7 +44,7 @@ clientDiscord.login(process.env.TOKENEPI);
 			
 			for (var i = 0; i < BAN.lenght; i++) {
 				
-				if(message.content === prefix + "nsfw"){
+				if(message.content === BAN[i]){
 				
 					message.delete(); return;
 					
