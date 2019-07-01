@@ -30,7 +30,12 @@ clientDiscord.login(process.env.TOKENEPI);
 
 	clientDiscord.on('message', message => {
 
-	author = message.author.tag;		
+		author = message.author.tag;
+		
+		if(message.author == client.user){
+		   	return;
+		   }
+		   
 		if(on == true){
 
 			if(message.content === prefix + "help"){
@@ -144,7 +149,7 @@ clientDiscord.login(process.env.TOKENEPI);
 				//message.channel.send("**VOTRE PROCHAIN MESSAGE SERA EPINGLER**");
 				pinned = true;
 			}
-			if(message.author != client.user && pinned == true){
+			if(pinned == true){
 				
 				if(message.content === prefix + "pin"){
 					message.channel.send("*▶ tapez votre message à épingler*")
