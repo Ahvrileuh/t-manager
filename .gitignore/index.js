@@ -121,7 +121,7 @@ clientDiscord.login(process.env.TOKENEPI);
 				   }
 			}
 			
-			if(message.content.includes === "bonjour"){
+			if(message.content.includes("bonjour")){
 				
 				message.channel.send("*bonjour les gens !*");
 				
