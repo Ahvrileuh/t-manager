@@ -138,17 +138,17 @@ clientDiscord.login(process.env.TOKENEPI);
   					message.delete();
 				}
 			}
-			
-			if(pinned == true){
-				message.pin();
-				pinned = false;
-				message.channel.send("**✅ Message épinglé !**");
-			}
-			else if(message.content === prefix + "pin"){
+
+			if(message.content === prefix + "pin"){
 			
 				//message.channel.send("**VOTRE PROCHAIN MESSAGE SERA EPINGLER**");
 				pinned = true;
-				
+				return;
+			}
+			else if(pinned == true){
+				message.pin();
+				pinned = false;
+				message.channel.send("**✅ Message épinglé !**");
 			}
 		}
   });
