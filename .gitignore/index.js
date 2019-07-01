@@ -2,7 +2,9 @@
 const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 
-var vers = "1";
+var vers = "2";
+
+var BAN = ['lepton', 'rat', 'test', 'test2'];
 
 var prefix = "!";
 var role = "";
@@ -37,6 +39,15 @@ clientDiscord.login(process.env.TOKENEPI);
 			if(message.content === prefix + "nsfw"){
 				
 				message.channel.send("c'est pas gentil d'être mechant avec les brigands 🍆 \n test");
+			}
+			
+			for (var i = 0; i < BAN.lenght; i++) {
+				
+				if(message.content === prefix + "nsfw"){
+				
+					message.delete(); return;
+					
+				}
 			}
 			
 			if(message.content === prefix + "dab"){
