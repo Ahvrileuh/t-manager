@@ -2,7 +2,7 @@
 const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 
-var vers = "6";
+var vers = "7";
 
 var BAN = ['lepton', 'rat', 'test', 'test2'];
 BAN.lenght = 4;
@@ -47,6 +47,11 @@ clientDiscord.login(process.env.TOKENEPI);
 				if(message.content === BAN[i]){
 				
 					message.delete();
+					
+					const channel = member.guild.channels.find('name', 'console');
+					if (!channel) return;
+					channel.send(`test`);
+					
 					return;
 					
 				}
