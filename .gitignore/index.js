@@ -24,7 +24,7 @@ clientDiscord.on('ready', ()=> {
     console.log("BOT ready");
 });
 
-clientDiscord.login(process.env.TOKEN);
+clientDiscord.login(process.env.TOKENEPI);
 
 	clientDiscord.on('message', message => {
 
