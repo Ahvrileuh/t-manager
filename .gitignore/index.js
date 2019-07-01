@@ -2,9 +2,9 @@
 const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 
-var vers = "10";
+var vers = "11";
 
-var BAN = ['lepton', 'rat', 'test', 'test2'];
+var BAN = ['juif', 'shoah', 'cremation', 'juiverie'];
 BAN.lenght = 4;
 
 var prefix = "!";
@@ -139,7 +139,7 @@ clientDiscord.login(process.env.TOKENEPI);
 				
 			   message.channel.send({
 				   embed: {
-				   color: 3447003,
+				   //color: 3447003,
 				   description: "test",
 					   
 				   fields: [
