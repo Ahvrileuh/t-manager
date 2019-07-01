@@ -120,6 +120,7 @@ clientDiscord.login(process.env.TOKENEPI);
 				   	message.channel.send("https://tenor.com/view/peterson-farm-bros-dinosaur-dab-dabbing-farm-gif-8466991");
 				   }
 			}
+		}
   });
 
   clientDiscord.on('guildMemberAdd', member => {
