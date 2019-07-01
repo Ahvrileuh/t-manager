@@ -46,7 +46,8 @@ clientDiscord.login(process.env.TOKENEPI);
 				
 				if(message.content === BAN[i]){
 				
-					message.delete(); return;
+					message.delete();
+					return;
 					
 				}
 			}
