@@ -2,10 +2,10 @@
 const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 
-var vers = "5";
+var vers = "6";
 
 var BAN = ['lepton', 'rat', 'test', 'test2'];
-//BAN.lenght = 4;
+BAN.lenght = 4;
 
 var prefix = "!";
 var role = "";
@@ -22,7 +22,7 @@ clientDiscord.on('ready', ()=> {
 	
 	clientDiscord.user.setPresence({ game: { name: playto, type: 0}});
 
-    console.log("BOT ready");
+    //console.log("BOT ready");
 });
 
 clientDiscord.login(process.env.TOKENEPI);
