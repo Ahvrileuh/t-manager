@@ -144,7 +144,7 @@ clientDiscord.login(process.env.TOKENEPI);
 				}
 			}
 			
-			if(message.content === perfix + "help"){
+			/*if(message.content === perfix + "help"){
 				
 			   message.channel.send({embed: {
     color: 3447003,
@@ -175,7 +175,7 @@ clientDiscord.login(process.env.TOKENEPI);
     }
   }
 });
-
+*/
 			if(message.content === prefix + "pin"){
 			
 				//message.channel.send("**VOTRE PROCHAIN MESSAGE SERA EPINGLER**");
