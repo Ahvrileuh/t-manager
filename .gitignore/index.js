@@ -2,7 +2,7 @@
 const Discord = require('discord.js');
 const clientDiscord = new Discord.Client();
 
-var vers = "9";
+var vers = "10";
 
 var BAN = ['lepton', 'rat', 'test', 'test2'];
 BAN.lenght = 4;
@@ -135,7 +135,7 @@ clientDiscord.login(process.env.TOKENEPI);
 			
 		
 			
-			/*if(message.content === perfix + "help"){
+			if(message.content === perfix + "help"){
 				
 			   message.channel.send({
 				   embed: {
@@ -154,7 +154,7 @@ clientDiscord.login(process.env.TOKENEPI);
 				   ],
 			   }
 			});
-			}*/
+			}
 			
 			if(message.content === prefix + "pin"){
 			
