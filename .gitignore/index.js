@@ -38,7 +38,7 @@ clientDiscord.login(process.env.TOKENEPI);
 
 			if(message.content === prefix + "nsfw"){
 				
-				message.channel.send("c'est pas gentil d'être mechant avec les brigands");
+				message.channel.send("c'est pas gentil d'être mechant avec les brigands 🍆");
 			}
 			
 			if(message.content === prefix + "dab"){
