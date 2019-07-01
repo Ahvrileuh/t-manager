@@ -144,7 +144,7 @@ clientDiscord.login(process.env.TOKENEPI);
 				//message.channel.send("**VOTRE PROCHAIN MESSAGE SERA EPINGLER**");
 				pinned = true;
 			}
-			else if(pinned == true){
+			if(message.author != client.user && pinned == true){
 				message.pin();
 				pinned = false;
 				message.channel.send("**✅ Message épinglé !**");
