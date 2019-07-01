@@ -18,6 +18,13 @@ var playto = "vers : " + vers;
 
 var pinned = false;
 
+var isCalc = false;
+var oper = 0;
+
+var a = 1f;
+var b = 2f;
+var c = 3f;
+
 clientDiscord.on('ready', ()=> {
 	
 	clientDiscord.user.setPresence({ game: { name: playto, type: 0}});
@@ -133,9 +140,23 @@ clientDiscord.login(process.env.TOKENEPI);
 				   }
 			}
 			
-		
+			if(message.content === prefix + "calc"){
+				
+				message.channel.send("*calculette lancer*");
+				isCalc = true;
+			}
+			else if(isCalc){
+				message.channel.send("*choisissez le mode d'operation \n entre: **!mult**, **!div**, **!add** et **!sous***");
+				if(message.content === prefix + "mult"){
+					oper = 1;
+				}
+				else if(message.content === prefix + "div"){
+					oper = 2;
+				}
+				isCalc = false;
+			}
 			
-			if(message.content === perfix + "help"){
+			/*if(message.content === perfix + "help"){
 				
 			   message.channel.send({
 				   embed: {
@@ -150,7 +171,7 @@ clientDiscord.login(process.env.TOKENEPI);
 				   ],
 			   }
 			});
-			}
+			}*/
 			
 			if(message.content === prefix + "pin"){
 			
