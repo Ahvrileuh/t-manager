@@ -129,6 +129,13 @@ clientDiscord.login(process.env.TOKENEPI);
   					message.channel.send("*JOHN LE LIEVRE EST MORT*");
 				}
 			}
+			
+			if(message.content === prefix + "clear"){
+			
+				for (var i = 0; i < 150; i++) {
+  					message.delete();
+				}
+			}
 		}
   });
 
