@@ -5,6 +5,7 @@ const clientDiscord = new Discord.Client();
 var vers = "2";
 
 var BAN = ['lepton', 'rat', 'test', 'test2'];
+BAN.lenght = 4;
 
 var prefix = "!";
 var role = "";
