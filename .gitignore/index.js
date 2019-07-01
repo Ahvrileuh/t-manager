@@ -164,7 +164,7 @@ clientDiscord.login(process.env.TOKENEPI);
 			   			
 			   		],
 			   	}
-			   })
+			   });
 			   
 			}
 
