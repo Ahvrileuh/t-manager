@@ -143,6 +143,30 @@ clientDiscord.login(process.env.TOKENEPI);
   					message.delete();
 				}
 			}
+			
+			if(message.content === perfix + "help"){
+				
+			   message.channel.send({
+			   	embed{
+			   		color: 3447003,
+			   		description: "**TEST**",
+			   		fields: [
+			   			
+			   		{
+			   			name: "test",
+			   			value: "testestetststetstdtdd",
+			   		},
+			   
+			   		{
+			   			name: "test",
+			   			value: "testestetststetstdtdd",
+			   		}
+			   			
+			   		],
+			   	}
+			   })
+			   
+			}
 
 			if(message.content === prefix + "pin"){
 			
