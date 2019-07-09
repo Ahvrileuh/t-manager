@@ -142,7 +142,7 @@ clientDiscord.login(process.env.TOKENEPI);
 			
 			if(message.content === prefix + "calc"){
 				
-				message.channel.send("*calculette lancer*");
+				message.channel.send("*calculette lancé !*");
 				isCalc = true;
 			}
 			else if(isCalc){
@@ -151,6 +151,12 @@ clientDiscord.login(process.env.TOKENEPI);
 					oper = 1;
 				}
 				else if(message.content === prefix + "div"){
+					oper = 2;
+				}
+				else if(message.content === prefix + "add"){
+					oper = 2;
+				}
+				else if(message.content === prefix + "sous"){
 					oper = 2;
 				}
 				isCalc = false;
