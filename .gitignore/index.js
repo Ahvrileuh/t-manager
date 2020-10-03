@@ -18,10 +18,7 @@ clientDiscord.login(process.env.TOKEN);
 	
 clientDiscord.on('message', message => {
 
-	//author = message.author.tag;
-
     if(message.content === prefix + "add"){
-
         if(isAdmin(message.author.id)){
             role = message.guild.roles.find('name', 'Développeur');
             message.member.addRole(role);
