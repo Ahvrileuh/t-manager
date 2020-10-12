@@ -76,6 +76,7 @@ clientDiscord.on('message', message => {
         if(bobx > 0){
             var receiver = "";
             console.log(bobx)
+	    
 
             for (let i = 0; i < admins.length; i++) {
                 if(message.isMentioned(admins[i])){
@@ -84,9 +85,10 @@ clientDiscord.on('message', message => {
                     break;
                 }
             }
-
+	if(receiver != message.author.id){
             var v = trade(receiver, message.author.id, bobx)
             message.channel.send("Transfert d'argent effectué ! Transfert de : **" + bobx + "** Bobux à " + receiver)
+	}else{message.channel.send("--'")}
         }else{message.channel.send("--'")}
     }
 
@@ -162,7 +164,7 @@ clientDiscord.on('message', message => {
     }
 
     else if(message.content.startsWith(prefix + "avoid")){
-        if(isAdmin(message.author.id) && bobux[trackAdmin(message.author.id)] >= 300){
+        if(isAdmin(message.author.id) && bobux[trackAdmin(message.author.id)] >= 300 && CountDown(endtime) > 0){
             b = message.content
             console.log(b.length)
             if(b.length > 11){
@@ -180,7 +182,7 @@ clientDiscord.on('message', message => {
 
             }else{message.reply("Votre mot est trop court ! (Minimum : 5 caractères)")}
 
-        }else{message.reply("Vous n'avez pas assez de bobux pour faire cette commande !")}
+        }else{message.reply("Vous n'avez pas assez de bobux pour faire cette commande ou quelqu'un a déjà bloquer un mot aujourd'hui !")}
     }
 });
 
