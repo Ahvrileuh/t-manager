@@ -7,7 +7,7 @@ var playto = "";
 var admins = ["464098201591349248", "515976128662339594", "624335277749698611", "323115884254199808", "287540207031418881"]
 var pseudos = ["Coma", "Levure", "Xuluf", "Navril", "Potassium"]
 var numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
-var bobux = [0, 0, 0, 0]
+var bobux = [0, 0, 0, 0, 0]
 
 var nword = ""
 var endtime = 0
