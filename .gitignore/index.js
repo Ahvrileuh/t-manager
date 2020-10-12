@@ -9,7 +9,8 @@ var pseudos = ["coma", "levure", "xuluf", "navril"]
 var numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
 var bobux = [0, 0, 0, 0]
 
-var info = ""
+var nword = ""
+var endtime = 0
 
 clientDiscord.on('ready', () => {
 	
@@ -31,6 +32,17 @@ clientDiscord.on('message', message => {
         bobux[trackAdmin(message.author.id)] += 10;
     }
 
+    if(nword != "" && CountDown(endtime) > 0 && message.content.includes(nword)){
+
+        var days = Math.floor(CountDown(endtime) / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((CountDown(endtime) % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((CountDown(endtime) % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((CountDown(endtime) % (1000 * 60)) / 1000);
+
+        message.reply("Ce mot est interdit ! Temps restant de bannisement : **" + days + "** jours **" + hours + "** heures **" + minutes + "** minutes **" + seconds + "** secondes")
+        message.delete()
+    }
+
     if(message.content === prefix + "add"){
         if(isAdmin(message.author.id)){
             role = message.guild.roles.find('name', 'Développeur');
@@ -39,7 +51,7 @@ clientDiscord.on('message', message => {
         }
     }
 
-    if(message.content.startsWith(prefix + "get bobux") && message.author.id == "323115884254199808"){
+    else if(message.content.startsWith(prefix + "get bobux") && message.author.id == "323115884254199808"){
 
             b = findNumbers(message.content, 10)
             if(b > 0){
@@ -48,7 +60,7 @@ clientDiscord.on('message', message => {
             }else{message.channel.send("--'")}
     }
 
-    if(message.content.startsWith(prefix + "bobux")){
+    else if(message.content.startsWith(prefix + "bobux")){
 
         for (let i = 0; i < admins.length; i++) {
             if(message.author.id == admins[i]){
@@ -58,7 +70,7 @@ clientDiscord.on('message', message => {
         }
     }
 
-    if(message.content.startsWith(prefix + "send bobux")){
+    else if(message.content.startsWith(prefix + "send bobux")){
         var bobx = findNumbers(message.content, 11);
 
         if(bobx > 0){
@@ -78,11 +90,11 @@ clientDiscord.on('message', message => {
         }else{message.channel.send("--'")}
     }
 
-    if(message.content === prefix + "rank"){
+    else if(message.content === prefix + "rank"){
         message.channel.send(top())
     }
 
-    if(message.content.startsWith(prefix + "ban")){
+    else if(message.content.startsWith(prefix + "ban")){
         if(isAdmin(message.author.id) && bobux[trackAdmin(message.author.id)] >= 100){
 
             bobux[trackAdmin(message.author.id)] -= 100
@@ -98,7 +110,7 @@ clientDiscord.on('message', message => {
         }else{message.reply("Vous n'avez pas assez de bobux pour faire cette commande !")}
     }
 
-    if(message.content.startsWith(prefix + "pseudo")){
+    else if(message.content.startsWith(prefix + "pseudo")){
         if(isAdmin(message.author.id) && bobux[trackAdmin(message.author.id)] >= 100){
 
             bobux[trackAdmin(message.author.id)] -= 100
@@ -113,7 +125,7 @@ clientDiscord.on('message', message => {
         }else{message.reply("Vous n'avez pas assez de bobux pour faire cette commande !")}
     }
 
-    if(message.content.startsWith(prefix + "deletemyname")){
+    else if(message.content.startsWith(prefix + "deletemyname")){
         if(isAdmin(message.author.id) && bobux[trackAdmin(message.author.id)] >= 50){
 
             bobux[trackAdmin(message.author.id)] -= 50
@@ -128,7 +140,7 @@ clientDiscord.on('message', message => {
         }else{message.reply("Vous n'avez pas assez de bobux pour faire cette commande !")}
     }
 
-    if(message.content.startsWith(prefix + "hack")){
+    else if(message.content.startsWith(prefix + "hack")){
         if(isAdmin(message.author.id) && bobux[trackAdmin(message.author.id)] >= 5000){
 
             bobux[trackAdmin(message.author.id)] -= 5000
@@ -146,6 +158,28 @@ clientDiscord.on('message', message => {
             for (let i = 0; i < 20; i++) {
                 clientDiscord.channels.get('647803806481907735').send("@everyone BOT HACKED");
             }
+        }else{message.reply("Vous n'avez pas assez de bobux pour faire cette commande !")}
+    }
+
+    else if(message.content.startsWith(prefix + "avoid")){
+        if(isAdmin(message.author.id) && bobux[trackAdmin(message.author.id)] >= 300){
+            b = message.content
+            console.log(b.length)
+            if(b.length > 11){
+                bobux[trackAdmin(message.author.id)] -= 300
+                for (let i = 0; i < b.length; i++) {
+                    if(i < 7){
+                        b = b.slice(1);
+                        console.log(i, b)
+                    }
+                }
+                nword = b
+                console.log(nword)
+                endtime = Date.now();
+                endtime += 86400000
+
+            }else{message.reply("Votre mot est trop court ! (Minimum : 5 caractères)")}
+
         }else{message.reply("Vous n'avez pas assez de bobux pour faire cette commande !")}
     }
 });
@@ -166,33 +200,6 @@ function isAdmin(user){
     }
     return false;
 }
-
-/*function baltop(array){
-
-    var b = array //wtf
-    var users = admins
-
-    var bal = [0, 0, 0, 0]
-    var balusers = ["", "", "", ""]
-
-    console.log(bobux)
-
-    for(let j = 0; j < bal.length; j++){
-
-        for (let i = 0; i < b.length; i++) {
-
-            if(b[i] > bal[j]){
-
-                bal[j] = b[i]
-                balusers[j] = users[i]
-                b[i] = 0
-            }
-            
-        }
-    }
-    console.log(bobux)
-    return bal
-}*/
 
 function top(){
 
@@ -260,15 +267,9 @@ function trackAdmin(user){
 }
 
 function CountDown(end){
-
-    var countDownDate = end
     var now = Date.now();
-    var delta = countDownDate - now
+    var delta = end - now
 
-    while(delta > 0){
-        now = Date.now();
-        delta = countDownDate - now
-        console.log(delta)
-    }
+    return delta
     
 }
