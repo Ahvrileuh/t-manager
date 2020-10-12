@@ -164,7 +164,7 @@ clientDiscord.on('message', message => {
     }
 
     else if(message.content.startsWith(prefix + "avoid")){
-        if(isAdmin(message.author.id) && bobux[trackAdmin(message.author.id)] >= 300 && CountDown(endtime) > 0){
+        if(isAdmin(message.author.id) && bobux[trackAdmin(message.author.id)] >= 300 && CountDown(endtime) <= 0){
             b = message.content
             console.log(b.length)
             if(b.length > 11){
